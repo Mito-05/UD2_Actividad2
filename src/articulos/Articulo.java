@@ -17,6 +17,14 @@ public class Articulo {
 
     public Articulo() {
     }
+    //Creamos el constructor que se pide con el precio por defecto a 9.99
+
+    public Articulo(String titulo, int anyoLanzamiento, double precioPorDia) {
+        this.titulo = titulo;
+        this.anyoLanzamiento = anyoLanzamiento;
+        this.precioPorDia = 9.99;
+    }
+
     //Creamos lo getter y lo setter
 
     public String getDescripcion() {
