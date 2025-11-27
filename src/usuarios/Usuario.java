@@ -59,7 +59,10 @@ public class Usuario {
 
         return contrasenya.length() >= 10;
     }
-
+    //añadimos el metodo saludo, sera void
+    public void saludo(){
+        System.out.println("Hola, soy "+ getNombreUsuario() + " y naci en "+getFechaNacimiento());
+    }
 
     @Override
     public String toString() {
