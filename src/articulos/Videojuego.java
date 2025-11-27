@@ -5,17 +5,26 @@ public class Videojuego extends Articulo{
     private String director;
     private String plataforma;
     private int pegi;
-
-    public Videojuego(String titulo, int anyoLanzamiento, double precioPorDia, String descripcion, String director, String plataforma, int pegi) {
+    private String version;
+    //añadimos los constructoress
+    public Videojuego(String titulo, int anyoLanzamiento, double precioPorDia, String descripcion, String director, String plataforma, int pegi, String version) {
         super(titulo, anyoLanzamiento, precioPorDia, descripcion);
         this.director = director;
         this.plataforma = plataforma;
         this.pegi = pegi;
+        this.version = version;
     }
 
     public Videojuego() {
     }
 
+    public Videojuego(String director, String plataforma, int pegi, String version) {
+        this.director = director;
+        this.plataforma = plataforma;
+        this.pegi = pegi;
+        this.version = "1.0";
+    }
+    //Creamos los getter and setter
     public String getDirector() {
         return director;
     }
@@ -48,6 +57,6 @@ public class Videojuego extends Articulo{
 
     @Override
     public String toString() {
-        return "Videojuego " + this.getTitulo() + " de " + this.director + " ( " + this.getPrecioPorDia() + "€/dia )";
+        return "Videojuego " + this.getTitulo()+" "+this.version + " de " + this.director + " ( " + this.getPrecioPorDia() + "€/dia )";
     }
 }
