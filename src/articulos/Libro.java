@@ -27,6 +27,15 @@ public class Libro extends Articulo {
         this.genero = genero;
     }
     //Creamos los getter y los setter
+
+    public boolean isEdicionEspecial() {
+        return edicionEspecial;
+    }
+
+    public void setEdicionEspecial(boolean edicionEspecial) {
+        this.edicionEspecial = edicionEspecial;
+    }
+
     public String getAutor() {
         return autor;
     }
@@ -53,6 +62,10 @@ public class Libro extends Articulo {
     //Creamos un metodo para ver si el libro tiene mas de 200 paginas, es tipo boolean para que devuelva true en caso de ser mayor o igual a 200 paginas
     public boolean esLargo(){
         return numPaginas >=200;
+    }
+    //Creamos un nuevo metodo esta vez void para que nos diga el genero del libro
+    public void getResumen(Libro libro) {
+        System.out.println(libro.getTitulo()+ " es del genero "+libro.getGenero());
     }
 
     @Override

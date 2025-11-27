@@ -4,18 +4,39 @@ package articulos;
 public class Pelicula extends Articulo{
     private String director;
     private int duracion;
+    private enum Idiomas{ESPAÑOL,INGLES,FRACES,ITALIANO,ALEMAN}
+    protected Idiomas idiomaAudio;
+    protected Idiomas idiomaSubtitulos;
     //Construtores con super para que herede los atributos de la clase padre
 
 
-    public Pelicula(String titulo, int anyoLanzamiento, double precioPorDia, String descripcion, String director, int duracion) {
+    public Pelicula(String titulo, int anyoLanzamiento, double precioPorDia, String descripcion, String director, int duracion, Idiomas idiomaAudio, Idiomas idiomaSubtitulos) {
         super(titulo, anyoLanzamiento, precioPorDia, descripcion);
         this.director = director;
         this.duracion = duracion;
+        this.idiomaAudio = idiomaAudio;
+        this.idiomaSubtitulos = idiomaSubtitulos;
     }
 
     public Pelicula() {
     }
     //Getter and Setter
+
+    public Idiomas getIdiomaAudio() {
+        return idiomaAudio;
+    }
+
+    public void setIdiomaAudio(Idiomas idiomaAudio) {
+        this.idiomaAudio = idiomaAudio;
+    }
+
+    public Idiomas getIdiomaSubtitulos() {
+        return idiomaSubtitulos;
+    }
+
+    public void setIdiomaSubtitulos(Idiomas idiomaSubtitulos) {
+        this.idiomaSubtitulos = idiomaSubtitulos;
+    }
 
     public String getDirector() {
         return director;
