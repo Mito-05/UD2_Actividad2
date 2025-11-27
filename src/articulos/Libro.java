@@ -5,12 +5,13 @@ public class Libro extends Articulo {
     //Creamos los atributos que se piden en el ejercicio
     private String autor;
     private int numPaginas;
-    public enum Genero  {Misterio,Terror,Acción,Historia,Fantasia}
+    public enum Genero  {MISTERIO,TERROR,ACCION,HISTORIA,FANTASIA,OTRO}
     protected Genero genero;
+    private boolean edicionEspecial;
     //Creamos los constructores utilizando super para que erede tambien los atributos de la clase padre al usarse en este caso aparte del completo y el vacio crearemos uno donde le daremos al numPaginas el valor fijo de 100
 
 
-    public Libro(String titulo, int anyoLanzamiento, double precioPorDia, String descripcion, String autor, int numPaginas, Genero genero) {
+    public Libro(String titulo, int anyoLanzamiento, double precioPorDia, String descripcion, String autor, int numPaginas, Genero genero, boolean edicionEspecial) {
         super(titulo, anyoLanzamiento, precioPorDia, descripcion);
         this.autor = autor;
         this.numPaginas = numPaginas;
