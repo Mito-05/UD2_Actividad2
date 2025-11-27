@@ -63,6 +63,15 @@ public class Articulo {
         double precio= numArticulos*(dias*this.precioPorDia);
         return precio;
     }
+    //Creamos un nuevo metodo que se llama getinfo sera void porque imprimira por pantalla el titulo y fecha de estreno
+    public void getInfo(){
+        System.out.println(this.titulo + " Lanzado en: " + this.anyoLanzamiento);
+    }
+    //ahora creamos el segundo metodo que se nos pide para aplicar un descuento
+    public double getPrecioConDescuento(double descuento){
+       double precioDescuento=(this.precioPorDia*descuento/100)+this.precioPorDia;
+        return precioDescuento;
+    }
 
     @Override
     public String toString() {
