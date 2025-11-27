@@ -6,7 +6,8 @@ public class Videojuego extends Articulo{
     private String plataforma;
     private int pegi;
 
-    public Videojuego(String director, int i, double v, String plataforma, String steam, int pegi) {
+    public Videojuego(String titulo, int anyoLanzamiento, double precioPorDia, String descripcion, String director, String plataforma, int pegi) {
+        super(titulo, anyoLanzamiento, precioPorDia, descripcion);
         this.director = director;
         this.plataforma = plataforma;
         this.pegi = pegi;

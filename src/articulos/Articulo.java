@@ -4,16 +4,29 @@ public class Articulo {
     private String titulo;
     private int anyoLanzamiento;
     private double precioPorDia;
+    private String descripcion;
     //Creamos los constructores uno completo y otro vacio
-    public Articulo(String titulo, int anyoLanzamiento, double precioPorDia) {
+
+
+    public Articulo(String titulo, int anyoLanzamiento, double precioPorDia, String descripcion) {
         this.titulo = titulo;
         this.anyoLanzamiento = anyoLanzamiento;
         this.precioPorDia = precioPorDia;
+        this.descripcion = descripcion;
     }
 
     public Articulo() {
     }
     //Creamos lo getter y lo setter
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
     public String getTitulo() {
         return titulo;
     }

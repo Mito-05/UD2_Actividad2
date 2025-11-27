@@ -5,8 +5,10 @@ public class Album extends Articulo{
     private int numCanciones;
     private boolean single;
     //Creamos los constructores utilizando super para que erede tambien los atributos de la clase padre al usarse
-    public Album(String titulo, int anyoLanzamiento, double precioPorDia, String autor, int numCanciones, boolean single) {
-        super(titulo, anyoLanzamiento, precioPorDia);
+
+
+    public Album(String titulo, int anyoLanzamiento, double precioPorDia, String descripcion, String autor, int numCanciones, boolean single) {
+        super(titulo, anyoLanzamiento, precioPorDia, descripcion);
         this.autor = autor;
         this.numCanciones = numCanciones;
         this.single = single;

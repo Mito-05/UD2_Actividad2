@@ -8,8 +8,10 @@ public class Libro extends Articulo {
     public enum Genero  {Misterio,Terror,Acción,Historia,Fantasia}
     protected Genero genero;
     //Creamos los constructores utilizando super para que erede tambien los atributos de la clase padre al usarse en este caso aparte del completo y el vacio crearemos uno donde le daremos al numPaginas el valor fijo de 100
-    public Libro(String titulo, int anyoLanzamiento, double precioPorDia, Genero genero) {
-        super(titulo, anyoLanzamiento, precioPorDia);
+
+
+    public Libro(String titulo, int anyoLanzamiento, double precioPorDia, String descripcion, String autor, int numPaginas, Genero genero) {
+        super(titulo, anyoLanzamiento, precioPorDia, descripcion);
         this.autor = autor;
         this.numPaginas = numPaginas;
         this.genero = genero;

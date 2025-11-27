@@ -6,8 +6,9 @@ public class Pelicula extends Articulo{
     private int duracion;
     //Construtores con super para que herede los atributos de la clase padre
 
-    public Pelicula(String titulo, int anyoLanzamiento, double precioPorDia, String director, int duracion) {
-        super(titulo, anyoLanzamiento, precioPorDia);
+
+    public Pelicula(String titulo, int anyoLanzamiento, double precioPorDia, String descripcion, String director, int duracion) {
+        super(titulo, anyoLanzamiento, precioPorDia, descripcion);
         this.director = director;
         this.duracion = duracion;
     }

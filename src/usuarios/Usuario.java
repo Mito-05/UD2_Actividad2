@@ -1,5 +1,6 @@
+//hacemos el package
 package usuarios;
-
+//creamos la clase
 public class Usuario {
     private String id;
     private String nombreUsuario;

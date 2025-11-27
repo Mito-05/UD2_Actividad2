@@ -15,11 +15,11 @@ public class Main {
         Videojuego v1 = new Videojuego("Arc Raiders",2025, 15.4, "Embark Studios","STEAM", 12);
         Videojuego v2 = new Videojuego("Valorant", 2020, 8.0, "Riot", "Riot Games", 16);
 
-        Album a1 = new Album("thriller", 1982, 6.5, "Michael Jackson", 9, false);
-        Album a2 = new Album("Un verano sin ti", 2023, 12, "Bad Bunny", 8, true);
+        Album a1 = new Album("thriller", 1982, 6.5, " El album mas vendido del mundo ", "Michael Jackson", 9, false);
+        Album a2 = new Album("Un verano sin ti", 2023, 12, " Simplemente sin mas ", "Bad Bunny", 12, true);
 
-        Libro l1 = new Libro("Harry Potter y la piedra filosofal", 1997, 18, Libro.Genero.Fantasia);
-        Libro l2 = new Libro("El retorno del rey", 1954, 8, Libro.Genero.Fantasia.name());
+        Libro l1 = new Libro("Harry Potter y la piedra filosofal", 1997, 32, Libro.Genero.Fantasia);
+        Libro l2 = new Libro("El retorno del rey", 1954, 28, Libro.Genero.Fantasia.name());
 
 //Creamos unos clientes
         Cliente c1 = new Cliente("Mito","Mito12312", 2005, "2011230",null, 1);
