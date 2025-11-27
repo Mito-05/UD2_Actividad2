@@ -4,7 +4,7 @@ package articulos;
 public class Pelicula extends Articulo{
     private String director;
     private int duracion;
-    private enum Idiomas{ESPAÑOL,INGLES,FRACES,ITALIANO,ALEMAN}
+    public enum Idiomas{ESPAÑOL,INGLES,FRACES,ITALIANO,ALEMAN}
     protected Idiomas idiomaAudio;
     protected Idiomas idiomaSubtitulos;
     //Construtores con super para que herede los atributos de la clase padre

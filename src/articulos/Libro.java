@@ -16,16 +16,19 @@ public class Libro extends Articulo {
         this.autor = autor;
         this.numPaginas = numPaginas;
         this.genero = genero;
+        this.edicionEspecial = edicionEspecial;
     }
 
     public Libro(String elRetornoDelRey, int anyoLanzamiento, int precioPorDia, String name) {
     }
 
-    public Libro(String autor, int numPaginas, Genero genero) {
+    public Libro(String autor, int numPaginas, Genero genero, boolean edicionEspecial) {
         this.autor = autor;
         this.numPaginas = 100;
         this.genero = genero;
+        this.edicionEspecial = edicionEspecial;
     }
+
     //Creamos los getter y los setter
 
     public boolean isEdicionEspecial() {
